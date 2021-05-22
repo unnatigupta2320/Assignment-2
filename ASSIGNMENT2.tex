@@ -132,20 +132,20 @@ columns=fullflexible
 \renewcommand{\thetable}{\theenumi}
 Download all python codes from 
 \begin{lstlisting}
-https://github.com/satyasm45/Summer-Internship/tree/main/Assignment-2/Codes
+https://github.com/unnatigupta2320/Assignment-2/tree/master/codes
 \end{lstlisting}
 %
 and latex-tikz codes from 
 %
 \begin{lstlisting}
-https://github.com/satyasm45/Summer-Internship/tree/main/Assignment-2
+https://github.com/unnatigupta2320/Assignment-2/tree/master
 \end{lstlisting}
 %
 \section{Question No. 2.36}
 Construct a quadrilateral MIST where $MI = 3.5, IS = 6.5, \angle M = 75 \degree, \angle I = 105 \degree$ and $\angle S = 120 \degree$.
 %
 \section{SOLUTION}
-For this quadrilateral adjacent side lengths $MI =3.5, IS=6.5$ 
+For this quadrilateral adjacent side lengths MI =3.5, IS=6.5
 and angles, \angle M = 75 \degree, \angle I = 105 \degree and \angle S = 120 \degree.
 \\
 $Also, \angle M = 75 \degree and \angle I = 105\degree,$
@@ -176,7 +176,39 @@ $ Now taking sum of all the angles given $ and \angle T, $ we get $
 \\
 $ So construction of given quadrilateral is possible as sum of all the angles is equal to $ 360\degree.
 \\
-$Now,On constructing the given  quadrilateral we, get:$
+$Let the coordinate of vertices M,I,S be$
+\\
+M(0,0);I(3.5,0);S(p,q);
+\\
+$Using cosine formula: $
+\\
+\norm{\vec{S}-\vec{M}}^2={ \norm{\vec{M}-\vec{I}}^2+ \norm{\vec{I}-\vec{S}}^2-{2\times\norm{\vec{M}-\vec{I}}\times \norm{\vec{I}-\vec{S}}\cos{I}};
+\\
+$ \implies SM^2={3.5^2+6.5^2-{2\times3.5\times6.5\times \cos{105\degree}}};$
+\\
+$SM= \sqrt{8.14*8.14};$
+\\
+$ \implies SM=8.14 ;$
+\\
+Also,Using, Distance Formula;
+\\
+\implies SM^2 = (p-0)^2+(q-0)^2;
+\\
+$\implies SM^2=p^2+q^2;$
+\\
+$\implies p^2+q^2=8.14--$ (1)
+\\
+$And, SI^2=(p-3.5)^2+(q-0)^2;$
+\\
+$ \implies (p-3.5)^2+q^2 =6.5^2--$(2)
+\\
+On solving,these two equations we get
+\\
+(p,q) =(5.46, 6.036)
+\\
+Similarly we can obtain$,$T as(2.42, 9.03)
+\\
+Now,On constructing the given  quadrilateral we, get:
 
 \numberwithin{figure}{section}
 \begin{figure}[!ht]
@@ -186,7 +218,5 @@ $Now,On constructing the given  quadrilateral we, get:$
 \label{fig:Quadrilateral MIST}	
 \end{figure}
 
-
-\end{enumerate}
 \end{document}
 
