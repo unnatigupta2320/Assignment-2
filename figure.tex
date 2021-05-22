@@ -1,0 +1,98 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{gensymb}
+
+\singlespacing
+
+
+\usepackage[cmex10]{amsmath}
+
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{tkz-euclide}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+
+\begin{tikzpicture}
+\centering
+\draw[step=1cm,gray,very thin] (-2,-2) grid (10,12);
+
+\draw[thick,->] (-1,0) -- (6,0) node[anchor=north west] {x axis};
+\draw[thick,->] (0,-1) -- (0,10) node[anchor=south east] {y axis};
+
+\foreach \x in {1,2,3,4,5,}
+   \draw (\x cm,-1pt) -- (\x cm,-1pt) node[anchor=north] {$\x$};
+\foreach \y in {1,2,3,4,5,6,7,8,9}
+    \draw (1pt,\y cm) -- (-1pt,\y cm) node[anchor=east] {$\y$};
+
+\draw[ red,thick] (0,0)--(3.5,0)--(5.46,6.036)--(2.42,9.03)--(0,0);
+
+%Labeling points
+\node (M) at (0, 0)[label=below left:$M$] {};
+\node (I) at (3.5, 0)[label=above right:$I$] {};
+\node (S) at (5.46,6.036)[label=above right:$S$] {};
+\node (T) at (2.42,9.03)[label=above right:$T$] {};
+
+\filldraw (0,0) circle[radius=2.5pt,];
+\filldraw (3.5,0) circle[radius=2.5pt];
+\filldraw (5.46,6.036) circle[radius=2.5pt];
+\filldraw (2.42,9.03) circle[radius=2.5pt];
+
+
+
+\end{tikzpicture}
+\end{document}
