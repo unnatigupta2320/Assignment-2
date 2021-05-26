@@ -13,10 +13,13 @@
 \usepackage{mathrsfs}
 \usepackage{txfonts}
 \usepackage{stfloats}
-\usepackage{bm}
+\usepackage{bm} 
+8
+
 \usepackage{cite}
 \usepackage{cases}
 \usepackage{subfig}
+\usepackage{tkz-euclide}
 
 \usepackage{longtable}
 \usepackage{multirow}
@@ -99,6 +102,9 @@ columns=fullflexible
 \filldraw (3.5,0) circle[radius=2.5pt];
 \filldraw (5.18,6.27) circle[radius=2.5pt];
 \filldraw (2.42,9.03) circle[radius=2.5pt];
+
+\tkzMarkAngle(I,M,S)
+\tkzLabelAngle[pos = 0.6](I,M,S){$\theta$}
 
 
 
