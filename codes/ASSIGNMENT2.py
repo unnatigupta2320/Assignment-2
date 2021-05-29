@@ -4,30 +4,24 @@ import matplotlib.pyplot as plt
 
 
   #Triangle vertices
-def myMacro() :
- def myVec_tri_vert_MIS(m,i,s):
+def myVec_tri_vert_MIS(m,i,s):
   p = (s**2 + i**2-m**2 )/(2*s)
   q = np.sqrt(i**2-p**2)
   S = np.array([p,q]) 
   M = np.array([0,0]) 
-  I = np.array([s,0]) 
+  I = np.array([s,0])
   return  M,I,S
 
-  #Triangle sides
-s = 3.5
-m = 6.5
-i = 8.14
-
-  #Coordinates of T
-k = (s**2 + i**2-m**2 )/(2*s)
-l = np.sqrt(i**2-k**2)
-print(k,l)
+ #Coordinates of T
+def getTcoordinates(s1,m1,t):
+  k = (s1**2 + t**2 - m1**2 )/(2*s1)
+  l = np.sqrt(t**2-k**2)
+  T = np.array([k,l]) 
+  return T
 
 #Quadrilateral vertices
-M = np.array([0,0])
-I = np.array([3.5,0])
-S=np.array([5.18,6.27])
-T=np.array([2.42,9.03])
+M,I,S=myVec_tri_vert_MIS(6.5,8.14,3.5)
+T=getTcoordinates(9.35,3.92,8.14)
 
 #Generating all lines
 x_MI = line_gen(M,I)
