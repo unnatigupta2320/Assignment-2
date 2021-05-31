@@ -87,28 +87,33 @@ columns=fullflexible
 \draw[ green,thick]
 (3.5,0)--(5.18,6.27);
 \draw[ blue,thick]
-(5.18,6.27)--(2.78,7.65);
+(5.18,6.27)--(2.42,9.63);
 \draw[brown,thick]
-(2.78,7.65)--(0,0);
+(2.42,9.63)--(0,0);
 \draw[orange,thick]
 (0,0)--(5.18,6.27);
 %Labeling points
 \node (M) at (0, 0)[label=below left:$M$] {};
 \node (I) at (3.5, 0)[label=above right:$I$] {};
 \node (S) at (5.18,6.27)[label=above right:$S$] {};
-\node (T) at (2.78,7.65)[label=above right:$T$] {};
+\node (T) at (2.42,9.63)[label=above right:$T$] {};
 
 \filldraw (0,0) circle[radius=2.5pt,];
 \filldraw (3.5,0) circle[radius=2.5pt];
 \filldraw (5.18,6.27) circle[radius=2.5pt];
-\filldraw (2.78,7.65) circle[radius=2.5pt];
+\filldraw (2.42,9.63) circle[radius=2.5pt];
 
-\tkzMarkAngle(I,M,S)
+\tkzMarkAngle(I,M,S)\draw
 \tkzLabelAngle[pos = 0.6](I,M,S){$\theta$}
 
 \tkzMarkAngle(T,S,M)
 \tkzLabelAngle[pos = 0.6](T,S,M){$\phi$}
 
+\tkzMarkAngle(M,T,S)
+\tkzLabelAngle[pos = 0.6](M,T,S){$\alpha2$}
+
+\tkzMarkAngle(I,M,T)
+\tkzLabelAngle[pos = 1.6](I,M,T){$\omega$}
 
 
 \end{tikzpicture}
