@@ -189,37 +189,35 @@ Now putting value of $\lambda$ in \eqref{eq2} and solving we get,
 \\
 &\implies \vec{S}=\myvec{5.18\\6.27}
 \end{align}
-\item For finding value of $MT$ :-
-\\
-In $\triangle MTS$, Let  $\angle$ TSM = $\phi$, $\angle$ TMS =$\omega$, $\angle$ MTS =$\beta$, Now using sine formula in $\triangle MTS$ we have
-\begin{align}
-\frac{{\sin \phi}}{MT} = \frac{{\sin\omega}}{ST} = \frac{{\sin \beta}}{SM}
-\end{align}
-\begin{align}
-\frac{{\sin 95.47\degree}}{MT} = \frac{{\sin 60\degree}}{8.14}
-\end{align}
-\begin{align}
-\implies MT=9.35 \label{eq7}
-\end{align}
 \item For finding coordinates of T:-
 \begin{align}
-\vec{T}=\vec{M} + \mu m =\mu m  (\because \vec{M}=0) \label{eq3}
+\vec{T}=\vec{M} + \mu m =\mu m  (\because \vec{M}=0) \label{eq2}
 \end{align}
 Using inner products of vectors in quadrilateral $MIST$,
 \begin{align}
-\frac{(S-T)^\intercal(S-I)}{\norm{S-T}\times\norm{S-I}}=\cos 120\degree \label{eq4}
+\frac{(S-T)^\intercal(S-I)}{\norm{S-T}\times\norm{S-I}}=\cos 120\degree \label{eq3}
 \\
-\frac{(S-T)^\intercal(M-T)}{\norm{S-T}\times\norm{M-T}}=\cos 60\degree \label{eq5}
+\frac{(S-T)^\intercal(M-T)}{\norm{S-T}\times\norm{M-T}}=\cos 60\degree \label{eq4}
 \end{align}
-\item Now, dividing \eqref{eq4} and \eqref{eq5}, we get:
+\item Now, dividing \eqref{eq3} and \eqref{eq4} then solving we get:
 \begin{align}
-\frac{(S-T)^\intercal(S-I)}{(S-T)^\intercal(M-T)} \times \frac{\norm{M-T}}{\norm{S-I}}=\frac{\cos 120\degree}{\cos 60\degree} \label{eq6}
+\frac{(S-T)^\intercal(S-I)}{(S-T)^\intercal(M-T)} \times \frac{\norm{M-T}}{\norm{S-I}}=\frac{\cos 120\degree}{\cos 60\degree} 
+\\
+\frac{(S-T)^\intercal(S-I)}{(S-T)^\intercal(M-T)} \times \frac{\cos 60\degree}{\cos 120\degree}= \frac{\norm{S-I}}{\norm{M-T}}
+\\
+\frac{\vec{S}^T\vec{S}-\vec{S}^T\vec{I}-\vec{T}^T\vec{S} +\vec{T}^T\vec{I}}{\vec{S}^T\vec{M} -\vec{S}^T\vec{T}-\vec{T}^T\vec{M} +\vec{T}^T\vec{T}} \times (-1) = \frac{6.5}{\mu} 
+\\
+\frac{\norm{S}^2-\vec{S}^T\vec{I}-\vec{T}^T\vec{S} +\vec{T}^T\vec{I}}{\vec{S}^T\vec{T} -\norm{T}^2}  = \frac{6.5}{\mu} \label{eq5} (\because \vec{M}=0)
 \end{align}
-\item On solving \eqref{eq3} and \eqref{eq6} using \eqref{eq7}, we have 
+\item On solving \eqref{eq5} using \eqref{eq2} we have 
 \begin{align}
+&\implies 6.491 \mu^2 -48.012\mu =6.4935\mu^2-48.035\mu
+\\
 &\implies \mu=9.35
-\\ 
-&\implies \vec{T}=9.35\myvec{\cos 75 \degree\\\sin 75 \degree} 
+\end{align}
+\item Now,putting value of $\mu$ in \eqref{eq2},we have \textbf{T} as
+\begin{align}
+&\implies \vec{T}=\mu m =9.35\myvec{\cos 75 \degree\\\sin 75 \degree} 
 \\
 &\implies \vec{T}=\myvec{2.42\\9.63} 
 \end{align}
@@ -227,7 +225,7 @@ Using inner products of vectors in quadrilateral $MIST$,
 \begin{align}
  \vec{M}=\myvec{0\\0},\vec{I} = \myvec{3.5\\0}, \vec{S}=\myvec{5.18\\6.27},\vec{T}=\myvec{2.42\\9.63}
 \end{align}
-    \item On constructing the given quadrilateral we, get:
+    \item On constructing the quadrilateral $MIST$ we get:
 \end{enumerate}
 \numberwithin{figure}{section}
 \begin{figure}[!ht]
