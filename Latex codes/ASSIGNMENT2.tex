@@ -149,77 +149,110 @@ Construct a quadrilateral MIST where $MI = 3.5, IS = 6.5, \angle M = 75 \degree,
 \begin{enumerate}
 \item Let us assume vertices of given quadrilateral $MIST$ as $\vec{M}$,$\vec{I}$,$\vec{S}$ and $\vec{T}$.
 
-\item According to given data:
+\item Let us generalize the given data:
     \begin{align}
-    \angle M= 75\degree,\angle I= 105\degree,\angle S= 120\degree
+    &\angle M= 75\degree=\theta \label{eq1}
     \\
-    \norm{\vec{M}-\vec{I}} = 3.5, \norm{\vec{I}-\vec{S}} = 6.5
+    &\angle I= 105\degree=\alpha
     \\
-    \vec{M}=\myvec{0\\0}, \vec{I}=\myvec{3.5\\0}
+    &\angle S= 120\degree=\gamma \label{eq2}
+    \\
+    &\norm{\vec{I}-\vec{M}} =3.5=a, \label{eq3}
+    \\
+    &\norm{\vec{S}-\vec{I}} =6.5=b,\label{eq4}
+    \\
+    &\vec{M}=\myvec{0\\0}, \vec{I}=\myvec{3.5\\0}
     \end{align}
-    
+\item Also, Let us assume the other two sides as
+\begin{align}
+ &\norm{\vec{S}-\vec{T}}=c \label{eq5}
+ \\
+  &\norm{\vec{M}-\vec{T}} =d \label{eq6}
+\end{align}  
+\item Finding out that quadrilateral is possible or not:-
+\begin{itemize}
 \item For this quadrilateral $MIST$ we have,
 \begin{align}
 \angle M +\angle I = 75\degree + 105\degree =180\degree,
 \end{align}
 $ \implies MT \parallel IS (\because \text {MI being the transversal})$
 \\
-\item As, sum of adjacent angle on same side is $180\degree$ only when lines are \textbf{parallel}.Now, ST is another transversal on these parallel lines then, we get:
+\item As, sum of adjacent angle on same side is $180\degree$ only when lines are \textbf{parallel}.Also,
 \begin{align}
-&\implies \angle S + \angle T = 180\degree 
+\implies \angle S + \angle T = 180\degree 
 \\
-&\implies \angle T = 60\degree\label{eq1}
+\implies \angle T = 60\degree 
+\\
+\text{Let }\angle T = 60\degree =\beta \label{eq7}
 \end{align}
- \item Now taking sum of all the angles given and \eqref{eq1} we get the sum as $360\degree$.So construction of given quadrilateral is possible.
+\item Now sum of all the angles given and \eqref{eq7} is $360\degree$.So construction of given quadrilateral is \textbf{Possible}.
+ \end{itemize}
  \item For finding coordinates of S:-
+\begin{itemize}
+\item Using vector equation of line,we have:
 \begin{align}
-\vec{S}=\vec{I} + \lambda m \label{eq2}
+\vec{S}=\vec{I} + \lambda m \label{eq8}
 \\
-\norm{\vec{S}-\vec{I}} = \abs{\lambda}\times\norm{\myvec{\cos 75 \degree\\\sin 75 \degree}} 
+\norm{\vec{S}-\vec{I}} = \abs{\lambda}\times\norm{\myvec{\cos \theta\\\sin \theta}} 
 \\
 \implies \norm{\vec{S}-\vec{I}}=\abs{\lambda}
-\\
-\implies \abs{\lambda}=6.5
+\end{align}
+\item Now using \eqref{eq4} and putting its value in above equation,we get
+\begin{align}
+\implies \abs{\lambda}=b 
 \\
 \implies \lambda =6.5
 \end{align}
-Now putting value of $\lambda$ in \eqref{eq2} and solving we get,
+\item Now by putting value of $\lambda$ in \eqref{eq8}  and using \eqref{eq1} solving we get,
 \begin{align}
+&\implies \vec{S}=\myvec{I} +b\myvec{\cos\theta \\\sin \theta }
+\\
 &\implies \vec{S}=\myvec{3.5\\0} +6.5\myvec{\cos 75 \degree\\\sin 75 \degree} 
 \\
 &\implies \vec{S}=\myvec{5.18\\6.27}
 \end{align}
+\end{itemize}
 \item For finding coordinates of T:-
+\begin{itemize}
+\item Again,using vector equation of line,we have:
 \begin{align}
-\vec{T}=\vec{M} + \mu m =\mu m  (\because \vec{M}=0) \label{eq2}
+\vec{T}=\vec{M} + \mu m =\mu m (\because \vec{M}=0) 
+\\
+\vec{T}=\mu \myvec{\cos \beta\\\sin \beta } \label{eq9}
 \end{align}
-Using inner products of vectors in quadrilateral $MIST$,
+\item Using inner products of vectors we get,
 \begin{align}
-\frac{(S-T)^\intercal(S-I)}{\norm{S-T}\times\norm{S-I}}=\cos 120\degree \label{eq3}
+\frac{(S-T)^\intercal(S-I)}{\norm{S-T}\times\norm{S-I}}=\cos\gamma \label{eq10}
 \\
-\frac{(S-T)^\intercal(M-T)}{\norm{S-T}\times\norm{M-T}}=\cos 60\degree \label{eq4}
+\frac{(S-T)^\intercal(M-T)}{\norm{S-T}\times\norm{M-T}}=\cos \beta \label{eq11}
 \end{align}
-\item Now, dividing \eqref{eq3} and \eqref{eq4} then solving we get:
+\end{itemize}
+\item Now, dividing \eqref{eq10} and \eqref{eq11} we get:
 \begin{align}
-\frac{(S-T)^\intercal(S-I)}{(S-T)^\intercal(M-T)} \times \frac{\norm{M-T}}{\norm{S-I}}=\frac{\cos 120\degree}{\cos 60\degree} 
+\frac{(S-T)^\intercal(S-I)}{(S-T)^\intercal(M-T)} \times \frac{\norm{M-T}}{\norm{S-I}}=\frac{\cos \gamma}{\cos \beta} 
 \\
-\frac{(S-T)^\intercal(S-I)}{(S-T)^\intercal(M-T)} \times \frac{\cos 60\degree}{\cos 120\degree}= \frac{\norm{S-I}}{\norm{M-T}}
-\\
-\frac{\vec{S}^T\vec{S}-\vec{S}^T\vec{I}-\vec{T}^T\vec{S} +\vec{T}^T\vec{I}}{\vec{S}^T\vec{M} -\vec{S}^T\vec{T}-\vec{T}^T\vec{M} +\vec{T}^T\vec{T}} \times (-1) = \frac{6.5}{\mu} 
-\\
-\frac{\norm{S}^2-\vec{S}^T\vec{I}-\vec{T}^T\vec{S} +\vec{T}^T\vec{I}}{\vec{S}^T\vec{T} -\norm{T}^2}  = \frac{6.5}{\mu} \label{eq5} (\because \vec{M}=0)
+\frac{(S-T)^\intercal(S-I)}{(S-T)^\intercal(M-T)} \times \frac{\cos \beta}{\cos \gamma}= \frac{\norm{S-I}}{\norm{M-T}}
 \end{align}
-\item On solving \eqref{eq5} using \eqref{eq2} we have 
+\item Now using \eqref{eq4}, \eqref{eq5} and \eqref{eq6} we get
 \begin{align}
-&\implies 6.491 \mu^2 -48.012\mu =6.4935\mu^2-48.035\mu
-\\
+\frac{c^Tb}{c^T d} \times \frac{\cos \beta}{\cos \gamma} =\frac{b}{d}
+\end{align}
+\begin{itemize}
+    \item On solving we get:
+\end{itemize}
+\begin{align}
+\implies 6.491 \mu^2 -48.012\mu =6.4935\mu^2-48.035\mu
+\end{align}
+\begin{align}
 &\implies \mu=9.35
 \end{align}
-\item Now,putting value of $\mu$ in \eqref{eq2},we have \textbf{T} as
+\item Now,putting value of $\mu$ in \eqref{eq9}we have \textbf{T} as
 \begin{align}
-&\implies \vec{T}=\mu m =9.35\myvec{\cos 75 \degree\\\sin 75 \degree} 
+\implies \vec{T}=\abs{\mu} \myvec{\cos \beta\\\sin \beta }
 \\
-&\implies \vec{T}=\myvec{2.42\\9.63} 
+\implies \vec{T} =9.35\myvec{\cos 75 \degree\\\sin 75 \degree} 
+\\
+\implies \vec{T}=\myvec{2.42\\9.63} 
 \end{align}
    \item Now,the vertices of given Quadrilateral MIST can be written as,
 \begin{align}
