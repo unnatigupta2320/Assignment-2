@@ -185,25 +185,36 @@ $ \implies MT \parallel IS (\because \text {MI being the transversal})$
 \\
 \text{Let }\angle T = 60\degree =\beta \label{eq7}
 \end{align}
-\item Now sum of all the angles given and \eqref{eq7} is $360\degree$.So construction of given quadrilateral is \textbf{Possible}.
+\item Now sum of all the angles given and \eqref{eq7} is $360\degree$.So construction of given quadrilateral is \textbf{possible}.
  \end{itemize}
  \item For finding coordinates of S:-
-\begin{itemize}
-\item Using vector equation of line,we have:
+ \begin{lemma}
+\label{lemma}
+The vector equation of line passing through point $S$ is given by:
 \begin{align}
 \vec{S}=\vec{I} + \lambda m \label{eq8}
-\\
+\end{align}
+\end{lemma}
+\begin{proof}
+\begin{align}
 \norm{\vec{S}-\vec{I}} = \abs{\lambda}\times\norm{\myvec{\cos \theta\\\sin \theta}} 
 \\
 \implies \norm{\vec{S}-\vec{I}}=\abs{\lambda}
 \end{align}
 \item Now using \eqref{eq4} and putting its value in above equation,we get
 \begin{align}
-\implies \abs{\lambda}=b 
-\\
+\implies \abs{\lambda}=b \label{eq12}
+\end{align}
+\item Now \eqref{eq8}  can also be written as:
+\begin{align}
+&\implies \vec{S}=\myvec{I} +\lambda \myvec{\cos\theta \\\sin \theta } \label{eq13}
+\end{align}
+\end{proof}
+\item Now,using \eqref{eq12} we get $\lambda$ as:
+\begin{align}
 \implies \lambda =6.5
 \end{align}
-\item Now by putting value of $\lambda$ in \eqref{eq8}  and using \eqref{eq1} solving we get,
+\item Now by putting value of $\lambda$ in \eqref{eq13}  and using \eqref{eq1} we get,
 \begin{align}
 &\implies \vec{S}=\myvec{I} +b\myvec{\cos\theta \\\sin \theta }
 \\
@@ -211,13 +222,16 @@ $ \implies MT \parallel IS (\because \text {MI being the transversal})$
 \\
 &\implies \vec{S}=\myvec{5.18\\6.27}
 \end{align}
-\end{itemize}
 \item For finding coordinates of T:-
-\begin{itemize}
-\item Again,using vector equation of line,we have:
+ \begin{lemma}
+\label{lemma}
+The vector equation of line is given by:
 \begin{align}
 \vec{T}=\vec{M} + \mu m =\mu m (\because \vec{M}=0) 
-\\
+\end{align}
+\end{lemma}
+\begin{proof}
+\begin{align}
 \vec{T}=\mu \myvec{\cos \beta\\\sin \beta } \label{eq9}
 \end{align}
 \item Using inner products of vectors we get,
@@ -226,7 +240,6 @@ $ \implies MT \parallel IS (\because \text {MI being the transversal})$
 \\
 \frac{(S-T)^\intercal(M-T)}{\norm{S-T}\times\norm{M-T}}=\cos \beta \label{eq11}
 \end{align}
-\end{itemize}
 \item Now, dividing \eqref{eq10} and \eqref{eq11} we get:
 \begin{align}
 \frac{(S-T)^\intercal(S-I)}{(S-T)^\intercal(M-T)} \times \frac{\norm{M-T}}{\norm{S-I}}=\frac{\cos \gamma}{\cos \beta} 
@@ -237,9 +250,8 @@ $ \implies MT \parallel IS (\because \text {MI being the transversal})$
 \begin{align}
 \frac{c^Tb}{c^T d} \times \frac{\cos \beta}{\cos \gamma} =\frac{b}{d}
 \end{align}
-\begin{itemize}
-    \item On solving we get:
-\end{itemize}
+\end{proof}
+    \item On putting the values and solving we get:
 \begin{align}
 \implies 6.491 \mu^2 -48.012\mu =6.4935\mu^2-48.035\mu
 \end{align}
@@ -260,6 +272,8 @@ $ \implies MT \parallel IS (\because \text {MI being the transversal})$
 \end{align}
     \item On constructing the quadrilateral $MIST$ we get:
 \end{enumerate}
+
+
 \numberwithin{figure}{section}
 \begin{figure}[!ht]
 \centering
