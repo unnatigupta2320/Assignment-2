@@ -188,14 +188,11 @@ $ \implies MT \parallel IS (\because \text {MI being the transversal})$
 \item Now sum of all the angles given and \eqref{eq7} is $360\degree$.So construction of given quadrilateral is \textbf{possible}.
  \end{itemize}
  \item For finding coordinates of S:-
- \begin{lemma}
-\label{lemma}
-The vector equation of line passing through point $S$ is given by:
+\begin{proof}
+The vector equation of line is given by:
 \begin{align}
 \vec{S}=\vec{I} + \lambda m \label{eq8}
 \end{align}
-\end{lemma}
-\begin{proof}
 \begin{align}
 \norm{\vec{S}-\vec{I}} = \abs{\lambda}\times\norm{\myvec{\cos \theta\\\sin \theta}} 
 \\
@@ -205,32 +202,28 @@ The vector equation of line passing through point $S$ is given by:
 \begin{align}
 \implies \abs{\lambda}=b \label{eq12}
 \end{align}
-\item Now \eqref{eq8}  can also be written as:
+\end{proof}
+\begin{lemma}
+\label{lemma}
+The coordinate of S can be written as:
 \begin{align}
 &\implies \vec{S}=\myvec{I} +\lambda \myvec{\cos\theta \\\sin \theta } \label{eq13}
 \end{align}
-\end{proof}
-\item Now,using \eqref{eq12} we get $\lambda$ as:
+\end{lemma}
+\item Putting value of $\lambda$=6.5 in \eqref{eq13} and using \eqref{eq1} we get,
 \begin{align}
-\implies \lambda =6.5
-\end{align}
-\item Now by putting value of $\lambda$ in \eqref{eq13}  and using \eqref{eq1} we get,
-\begin{align}
-&\implies \vec{S}=\myvec{I} +b\myvec{\cos\theta \\\sin \theta }
+&\implies \vec{S}=\vec{I} +b\myvec{\cos\theta \\\sin \theta }
 \\
 &\implies \vec{S}=\myvec{3.5\\0} +6.5\myvec{\cos 75 \degree\\\sin 75 \degree} 
 \\
 &\implies \vec{S}=\myvec{5.18\\6.27}
 \end{align}
 \item For finding coordinates of T:-
- \begin{lemma}
-\label{lemma}
+\begin{proof}
 The vector equation of line is given by:
 \begin{align}
 \vec{T}=\vec{M} + \mu m =\mu m (\because \vec{M}=0) 
 \end{align}
-\end{lemma}
-\begin{proof}
 \begin{align}
 \vec{T}=\mu \myvec{\cos \beta\\\sin \beta } \label{eq9}
 \end{align}
@@ -248,20 +241,24 @@ The vector equation of line is given by:
 \end{align}
 \item Now using \eqref{eq4}, \eqref{eq5} and \eqref{eq6} we get
 \begin{align}
-\frac{c^Tb}{c^T d} \times \frac{\cos \beta}{\cos \gamma} =\frac{b}{d}
+\frac{c^Tb}{c^T d} \times \frac{\cos \beta}{\cos \gamma} =\frac{b}{d} \label{eq a}
 \end{align}
 \end{proof}
-    \item On putting the values and solving we get:
+\begin{lemma}
+The coordinates of $T$ can be written as:
+\begin{align}
+\implies \vec{T}=\abs{\mu} \myvec{\cos \beta\\\sin \beta }
+\end{align}
+\end{lemma}
+\item Using \eqref{eq a}and solving we get:
 \begin{align}
 \implies 6.491 \mu^2 -48.012\mu =6.4935\mu^2-48.035\mu
 \end{align}
 \begin{align}
 &\implies \mu=9.35
 \end{align}
-\item Now,putting value of $\mu$ in \eqref{eq9}we have \textbf{T} as
+\item Putting value of $\mu$  and $\beta$,we get:
 \begin{align}
-\implies \vec{T}=\abs{\mu} \myvec{\cos \beta\\\sin \beta }
-\\
 \implies \vec{T} =9.35\myvec{\cos 75 \degree\\\sin 75 \degree} 
 \\
 \implies \vec{T}=\myvec{2.42\\9.63} 
