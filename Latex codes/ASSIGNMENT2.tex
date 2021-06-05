@@ -193,7 +193,7 @@ The coordinate of S and T can be written as follows:
 \begin{align}
 \implies \vec{S}=\myvec{I} + b\myvec{\cos\theta \\\sin \theta } \label{eq13}
 \\
-\implies \vec{T}= d\myvec{\cos \beta\\\sin \beta }
+\implies \vec{T}= b \times \frac{c^T d}{c^Tb} \times \frac{\cos \gamma} {\cos \beta}\times {\myvec{\cos \beta\\\sin \beta }}
 \end{align}
 \end{lemma}
 \begin{proof}
@@ -239,6 +239,10 @@ The vector equation of line is given by:
 \item Now using \eqref{eq4}, \eqref{eq5} and \eqref{eq6} we get
 \begin{align}
 \frac{c^Tb}{c^T d} \times \frac{\cos \beta}{\cos \gamma} =\frac{b}{d} \label{eq a}
+\\
+d= b\times \frac{c^T d}{c^Tb} \times \frac{\cos \gamma} {\cos \beta}
+\\
+\text{which gives }\vec{T}=d \times{\myvec{\cos \beta\\ \sin \beta}}
 \end{align}
 \end{proof}
 \item Putting value of $\lambda$=6.5 in \eqref{eq13} and using \eqref{eq1} we get,
