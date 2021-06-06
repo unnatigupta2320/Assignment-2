@@ -191,18 +191,18 @@ $ \implies MT \parallel IS (\because \text {MI being the transversal})$
 \label{lemma}
 The coordinate of S and T can be written as follows:
 \begin{align}
-\implies \vec{S}=\myvec{a\\0} + b\myvec{\cos\theta \\\sin \theta } \label{eq13}
+\implies \vec{S}=\myvec{a\\0} + b\myvec{\cos M \\\sin M} \label{eq13}
 \\
-\implies \vec{T}= d{\myvec{\cos \theta\\\sin \theta }};
+\implies \vec{T}= d{\myvec{\cos M\\\sin M }};
 \end{align}
 \text{where,If we consider,}
 \begin{align} 
-b\times \frac{\cos \gamma}{\cos\beta} =P 
+b\times \frac{\cos S}{\cos T} =P 
 \end{align}
 \text{then d =}
-\begin{multline}
-\frac{P[b\cos^2\theta+a\cos\theta+\sin^2\theta]-b^2-ab\cos\theta} {P-\sin^2\theta +b\cos^2 \theta}  \label{eqb} 
-\end{multline}
+\begin{align}
+\frac{P[b\cos^2M +a\cos M +\sin^2M]-b^2-ab\cos M} {P-\sin^2 M +b\cos^2 M}  \label{eqb} 
+\end{align}
 \end{lemma}
 \begin{proof}
 \begin{itemize}
@@ -213,7 +213,7 @@ The vector equation of line is given by:
 \vec{S}=\vec{I} + \lambda m \label{eq8}
 \end{align}
 \begin{align}
-\norm{\vec{S}-\vec{I}} = \abs{\lambda}\times\norm{\myvec{\cos \theta\\\sin \theta}} 
+\norm{\vec{S}-\vec{I}} = \abs{\lambda}\times\norm{\myvec{\cos M\\\sin M}} 
 \\
 \implies \norm{\vec{S}-\vec{I}}=\abs{\lambda}
 \end{align}
@@ -221,7 +221,7 @@ The vector equation of line is given by:
 \begin{align}
 \implies b=\abs{\lambda} \label{eq12}
 \\
-\implies \vec{S}=\myvec{a\\0} + b\myvec{\cos\theta \\\sin \theta } 
+\implies \vec{S}=\myvec{a\\0} + b\myvec{\cos M \\\sin M } 
 \end{align}
 \begin{itemize}
 \item For finding coordinates of T:-
@@ -230,49 +230,49 @@ The vector equation of line is given by:
 \begin{align}
 \vec{T}=\vec{M} + \mu m =\mu m (\because \vec{M}=0) 
 \\
-\norm{\vec{T}}=\abs{\mu}\times\norm{\myvec{\cos \theta\\\sin \theta}} 
+\norm{\vec{T}}=\abs{\mu}\times\norm{\myvec{\cos M\\\sin M}} 
 \end{align}
 Now,using  \eqref{eq6},we get:
 \begin{align}
 \implies d=\abs{\mu}
 \end{align}
 \begin{align}
-\vec{T}=d \myvec{\cos \theta\\\sin \theta } \label{eq9}
+\vec{T}=d \myvec{\cos M\\\sin M } \label{eq9}
 \end{align}
 \item Using inner products of vectors in quadrilateral $MIST$ we get,
 \begin{align}
-\frac{(S-T)^\intercal(S-I)}{\norm{S-T}\times\norm{S-I}}=\cos\gamma \label{eq10}
+\frac{\vec{(S-T)}^\intercal\vec{(S-I)}}{\norm{\vec{S-T}}\times\norm{\vec{S-I}}}=\cos S \label{eq10}
 \end{align}
 \begin{align}
-\frac{(S-T)^\intercal(M-T)}{\norm{S-T}\times\norm{M-T}}=\cos \beta \label{eq11}
+\frac{\vec{(S-T)}^\intercal\vec{(M-T)}}{\norm{\vec{S-T}}\times\norm{\vec{M-T}}}=\cos T \label{eq11}
 \end{align}
 \item Now, dividing \eqref{eq10} and \eqref{eq11} we get:
 \begin{align}
-\frac{(S-T)^\intercal(S-I)}{(S-T)^\intercal(M-T)} \times \frac{\norm{M-T}}{\norm{S-I}}=\frac{\cos \gamma}{\cos \beta} 
+\frac{\vec{(S-T)}^\intercal\vec{(S-I)}} {\vec{(S-T)}^\intercal\vec{(M-T)}} \times \frac{\norm{\vec{M-T}}}{\norm{\vec{S-I}}}=\frac{\cos S}{\cos T} 
 \end{align}
 \begin{align}
-\frac{S^\intercal T-S^\intercal I-T^\intercal S+T^\intercal I}{S^\intercal M-S^\intercal T-T^\intercal M+T^\intercal T} \times\frac{\cos \beta}{\cos \gamma}= \frac{\norm{S-I}}{\norm{M-T}}
+\frac{\vec{S}^\intercal\vec{T}-\vec{S}^\intercal \vec{I}-\vec{T}^\intercal\vec{S}+\vec{T}^\intercal \vec{I}}{\vec{S}^\intercal\vec{M}-\vec{S}^\intercal \vec{T}-\vec{T}^\intercal\vec{M}+\vec{T}^\intercal \vec{T}}\times\frac{\cos T}{\cos S}= \frac{\norm{\vec{S-I}}}{\norm{\vec{M-T}}}
 \end{align}
 \begin{align}
-\frac{S^\intercal T-S^\intercal I-T^\intercal S+T^\intercal I}{-S^\intercal T+T^\intercal T} = \frac{b}{d}\times \frac{\cos \gamma}{\cos \beta} \label{eqa}
+\frac{\vec{S}^\intercal \vec{T}-\vec{S}^\intercal \vec{I}-\vec{T}^\intercal\vec{S}+\vec{T}^\intercal \vec{I}}{-\vec{S}^\intercal \vec{T}+\vec{T}^\intercal \vec{T}} = \frac{b}{d}\times \frac{\cos S}{\cos T} \label{eqa}
 \end{align}
 \begin{align}
-\frac{c^Tb}{c^T d} \times \frac{\cos \beta}{\cos \gamma} =\frac{b}{d}
+\frac{c^Tb}{c^T d} \times \frac{\cos T}{\cos S} =\frac{b}{d}
 \end{align}
 \begin{align}
-\text{Let } b\times \frac{\cos \gamma}{\cos\beta} = P
+\text{Let } b\times \frac{\cos S}{\cos T} = P
 \end{align}
 \item Now solving \eqref{eqa} we get, d=
-\begin{multline}
-\frac{P[b\cos^2\theta+a\cos\theta+\sin^2\theta]-b^2-ab\cos\theta} {P-\sin^2\theta +b\cos^2 \theta}  \label{eqb} 
-\end{multline}
 \begin{align}
-\text{and  }\vec{T}=d \times{\myvec{\cos \theta\\ \sin \theta}}
+\frac{P[b\cos^2M +a\cos M+\sin^2M]-b^2-ab\cos M} {P-\sin^2M +b\cos^2M}  \label{eqb} 
+\end{align}
+\begin{align}
+\text{and  }\vec{T}=d \times{\myvec{\cos M\\ \sin M}}
 \end{align}
 \end{proof}
 \item Putting value of $\lambda$=6.5 in \eqref{eq13} and using \eqref{eq1} we get,
 \begin{align}
-&\implies \vec{S}=\myvec{a\\0} +b\myvec{\cos\theta \\\sin \theta }
+&\implies \vec{S}=\myvec{a\\0} +b\myvec{\cos M \\\sin M}
 \\
 &\implies \vec{S}=\myvec{3.5\\0} +6.5\myvec{\cos 75 \degree\\\sin 75 \degree} 
 \\
@@ -286,7 +286,7 @@ d= \frac{-6.5[0.435+0.905+.933]-42.25-5.888}{[-6.5-0.933+0.435]}
 \begin{align}
 \implies d=9.35
 \end{align}
-\item Putting value of $d$  and $\theta$ in \eqref{eq9}we get:
+\item Putting value of $d$  and $M$ in \eqref{eq9}we get:
 \begin{align}
 \implies \vec{T} =9.35\myvec{\cos 75 \degree\\\sin 75 \degree}
 \\
