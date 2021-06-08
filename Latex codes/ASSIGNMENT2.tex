@@ -177,16 +177,44 @@ Construct a quadrilateral MIST where $MI = 3.5, IS = 6.5, \angle M = 75 \degree,
 \end{align}
 $ \implies MT \parallel IS (\because \text {MI being the transversal})$
 \\
-\item As, sum of adjacent angle on same side is $180\degree$ only when lines are \textbf{parallel}.Also,
+\item As,sum of adjacent angle on same side is $180\degree$ only when lines are \textbf{parallel}.
+\item If we consider $\angle$ MSI and $\angle$  TMS ,then as alternate pair of angles are equal,we get:
+\begin{align}
+\angle MSI = \angle TMS =\omega \label{eq7}
+\end{align}
+\item Also, $ST$ being another transversal, we get:
 \begin{align}
 \implies \angle S + \angle T = 180\degree 
 \\
 \implies \angle T = 60\degree 
 \\
-\text{Let }\angle T = 60\degree =\beta \label{eq7}
+\text{Let }\angle T = 60\degree =\beta \label{eq8}
 \end{align}
-\item Now sum of all the angles given and \eqref{eq7} is $360\degree$.So construction of given quadrilateral is \textbf{possible}.
+\item Now sum of all the angles given and \eqref{eq8} is $360\degree$.So construction of given quadrilateral is \textbf{possible}.
 \end{itemize}
+\item For finding value of c:
+\begin{itemize}
+\item Applying sine formula in $\triangle$ MIS using \eqref{eq7} we have
+\end{itemize}
+\begin{align}
+\frac{MS}{\sin I}=\frac{MI}{\sin \omega }
+\end{align}
+\begin{align}
+\therefore MS=\frac{a\times \sin \alpha}{\sin \omega} \label{eq9}
+\end{align}
+\begin{itemize}
+\item Applying sine formula in $\triangle$ MTS ,we have:
+\end{itemize}
+\begin{align}
+  \frac{MS}{\sin T}=\frac{ST}{\sin \omega} \label{eq10}  
+\end{align}
+\begin{itemize}
+\item Putting value of \eqref{eq9} in\eqref{eq10}
+we get :
+\end{itemize}
+\begin{align}
+c=\frac{a\times \sin I}{\sin T} \label{eq11}
+\end{align}
 \begin{lemma}
 \label{lemma}
 The coordinate of S and T can be written as follows:
@@ -195,13 +223,9 @@ The coordinate of S and T can be written as follows:
 \\
 \implies \vec{T}= d{\myvec{\cos M\\\sin M }};
 \end{align}
-\text{where,If we consider,}
-\begin{align} 
-b\times \frac{\cos S}{\cos T} =P 
-\end{align}
-\text{then d =}
+\item where the value of d is:
 \begin{align}
-\frac{P[b\cos^2M +a\cos M +\sin^2M]-b^2-ab\cos M} {P-\sin^2 M +b\cos^2 M}  \label{eqb} 
+d=\frac{a}{2}\times\frac{\sin I}{\sin T}+ b+a \cos M\label{eq12} 
 \end{align}
 \end{lemma}
 \begin{proof}
@@ -210,7 +234,7 @@ b\times \frac{\cos S}{\cos T} =P
 \end{itemize}
 The vector equation of line is given by:
 \begin{align}
-\vec{S}=\vec{I} + \lambda m \label{eq8}
+\vec{S}=\vec{I} + \lambda m \label{eq13}
 \end{align}
 \begin{align}
 \norm{\vec{S}-\vec{I}} = \abs{\lambda}\times\norm{\myvec{\cos M\\\sin M}} 
@@ -219,9 +243,9 @@ The vector equation of line is given by:
 \end{align}
 \item Now using \eqref{eq4} we get:
 \begin{align}
-\implies b=\abs{\lambda} \label{eq12}
+&\implies \abs{\lambda}=b \label{eq14}
 \\
-\implies \vec{S}=\myvec{a\\0} + b\myvec{\cos M \\\sin M } 
+&\implies \vec{S}=\myvec{a\\0} + b\myvec{\cos M \\\sin M } 
 \end{align}
 \begin{itemize}
 \item For finding coordinates of T:-
@@ -234,40 +258,32 @@ The vector equation of line is given by:
 \end{align}
 Now,using  \eqref{eq6},we get:
 \begin{align}
-\implies d=\abs{\mu}
+\abs{\mu}=d
 \end{align}
 \begin{align}
-\vec{T}=d \myvec{\cos M\\\sin M } \label{eq9}
+\implies \vec{T}=d \myvec{\cos M\\\sin M } \label{eq15}
 \end{align}
 \item Using inner products of vectors in quadrilateral $MIST$ we get,
 \begin{align}
-\frac{\vec{(S-T)}^\intercal\vec{(S-I)}}{\norm{\vec{S-T}}\times\norm{\vec{S-I}}}=\cos S \label{eq10}
+\frac{\vec{(S-T)}^\intercal\vec{(M-T)}}{\norm{\vec{S-T}}\times\norm{\vec{M-T}}}=\cos T 
+\end{align}
+
+\begin{align}
+\frac{\vec{S}^\intercal\vec{M}-\vec{S}^\intercal \vec{T}-\vec{T}^\intercal\vec{M}+\vec{T}^\intercal \vec{T}}{\norm{\vec{S-T}}\times\norm{\vec{M-T}}}=\cos T
 \end{align}
 \begin{align}
-\frac{\vec{(S-T)}^\intercal\vec{(M-T)}}{\norm{\vec{S-T}}\times\norm{\vec{M-T}}}=\cos T \label{eq11}
-\end{align}
-\item Now, dividing \eqref{eq10} and \eqref{eq11} we get:
-\begin{align}
-\frac{\vec{(S-T)}^\intercal\vec{(S-I)}} {\vec{(S-T)}^\intercal\vec{(M-T)}} \times \frac{\norm{\vec{M-T}}}{\norm{\vec{S-I}}}=\frac{\cos S}{\cos T} 
+\frac{-\vec{S}^\intercal \vec{T}+\vec{T}^\intercal \vec{T}}{\norm{\vec{S-T}}\times\norm{\vec{M-T}}} = \cos T ( \because \vec{M}=0) \label{eqa}
 \end{align}
 \begin{align}
-\frac{\vec{S}^\intercal\vec{T}-\vec{S}^\intercal \vec{I}-\vec{T}^\intercal\vec{S}+\vec{T}^\intercal \vec{I}}{\vec{S}^\intercal\vec{M}-\vec{S}^\intercal \vec{T}-\vec{T}^\intercal\vec{M}+\vec{T}^\intercal \vec{T}}\times\frac{\cos T}{\cos S}= \frac{\norm{\vec{S-I}}}{\norm{\vec{M-T}}}
+\frac{-\vec{S}^\intercal \vec{T}+\vec{T}^\intercal \vec{T}}{c\times d} =\cos T
+\\ 
+\frac{d^2-b\times d-a\cos M}{c\times d} =\cos T
 \end{align}
+\item Putting value of c from \eqref{eq11},we get:
 \begin{align}
-\frac{\vec{S}^\intercal \vec{T}-\vec{S}^\intercal \vec{I}-\vec{T}^\intercal\vec{S}+\vec{T}^\intercal \vec{I}}{-\vec{S}^\intercal \vec{T}+\vec{T}^\intercal \vec{T}} = \frac{b}{d}\times \frac{\cos S}{\cos T} \label{eqa}
-\end{align}
-\begin{align}
-\frac{c^Tb}{c^T d} \times \frac{\cos T}{\cos S} =\frac{b}{d}
-\end{align}
-\begin{align}
-\text{Let } b\times \frac{\cos S}{\cos T} = P
-\end{align}
-\item Now solving \eqref{eqa} we get, d=
-\begin{align}
-\frac{P[b\cos^2M +a\cos M+\sin^2M]-b^2-ab\cos M} {P-\sin^2M +b\cos^2M}  \label{eqb} 
-\end{align}
-\begin{align}
-\text{and  }\vec{T}=d \times{\myvec{\cos M\\ \sin M}}
+d=\frac{a}{2}\times\frac{\sin I}{\sin T}+ b+a \cos M    \label{eqa}
+\\
+\therefore \vec{T}=d \times{\myvec{\cos M\\ \sin M}}
 \end{align}
 \end{proof}
 \item Putting value of $\lambda$=6.5 in \eqref{eq13} and using \eqref{eq1} we get,
@@ -279,22 +295,24 @@ Now,using  \eqref{eq6},we get:
 &\implies \vec{S}=\myvec{5.18\\6.27}
 \end{align}
 
-\item Using \eqref{eqb}and solving we get:
+\item Using \eqref{eqa}and solving we get:
 \begin{align}
-d= \frac{-6.5[0.435+0.905+.933]-42.25-5.888}{[-6.5-0.933+0.435]}
+&\implies d=\frac{a}{2}\times\frac{\sin I}{\sin T}+ b+a \cos M 
 \end{align}
 \begin{align}
-\implies d=9.35
-\end{align}
-\item Putting value of $d$  and $M$ in \eqref{eq9}we get:
-\begin{align}
-\implies \vec{T} =9.35\myvec{\cos 75 \degree\\\sin 75 \degree}
+&\implies d=\frac{3.5}{2}\times\frac{\sin 105}{\sin 60}+ 6.5+3.5 \cos75
 \\
-\implies \vec{T}=\myvec{2.42\\9.63} 
+&\implies d=9.35
+\end{align}
+\item Putting value of $d$  and $\angle$ M in \eqref{eq15}we get:
+\begin{align}
+&\implies \vec{T} =9.35\myvec{\cos 75 \degree\\\sin 75 \degree}
+\\
+&\implies \vec{T}=\myvec{2.41\\9.03} 
 \end{align}
    \item Now,the vertices of given Quadrilateral MIST can be written as,
 \begin{align}
- \vec{M}=\myvec{0\\0},\vec{I} = \myvec{3.5\\0}, \vec{S}=\myvec{5.18\\6.27},\vec{T}=\myvec{2.42\\9.63}
+ \vec{M}=\myvec{0\\0},\vec{I} = \myvec{3.5\\0}, \vec{S}=\myvec{5.18\\6.27},\vec{T}=\myvec{2.41\\9.03} 
 \end{align}
     \item On constructing the quadrilateral $MIST$ we get:
 \end{enumerate}
@@ -303,7 +321,7 @@ d= \frac{-6.5[0.435+0.905+.933]-42.25-5.888}{[-6.5-0.933+0.435]}
 \numberwithin{figure}{section}
 \begin{figure}[!ht]
 \centering
-\includegraphics[ width=\columnwidth, height=08 cm]{MIST-Quadrilateral.png}
+\includegraphics[ width=\columnwidth, height=05 cm]{MIST.png}
 \caption{Quadrilateral MIST}
 \label{fig:Quadrilateral MIST}	
 \end{figure}
