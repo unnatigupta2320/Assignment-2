@@ -200,7 +200,7 @@ $ \implies MT \parallel IS (\because \text {MI being the transversal})$
 \frac{MS}{\sin I}=\frac{MI}{\sin \omega }
 \end{align}
 \begin{align}
-\therefore MS=\frac{a\times \sin \alpha}{\sin \omega} \label{eq9}
+\therefore MS=\frac{a\times \sin I}{\sin \omega} \label{eq9}
 \end{align}
 \begin{itemize}
 \item Applying sine formula in $\triangle$ MTS ,we have:
@@ -272,11 +272,28 @@ Now,using  \eqref{eq6},we get:
 \frac{\vec{S}^\intercal\vec{M}-\vec{S}^\intercal \vec{T}-\vec{T}^\intercal\vec{M}+\vec{T}^\intercal \vec{T}}{\norm{\vec{S-T}}\times\norm{\vec{M-T}}}=\cos T
 \end{align}
 \begin{align}
-\frac{-\vec{S}^\intercal \vec{T}+\vec{T}^\intercal \vec{T}}{\norm{\vec{S-T}}\times\norm{\vec{M-T}}} = \cos T ( \because \vec{M}=0) \label{eqa}
+\frac{-\vec{S}^\intercal \vec{T}+\vec{T}^\intercal \vec{T}}{\norm{\vec{S-T}}\times\norm{\vec{M-T}}} = \cos T ( \because \vec{M}=0) 
 \end{align}
 \begin{align}
-\frac{-\vec{S}^\intercal \vec{T}+\vec{T}^\intercal \vec{T}}{c\times d} =\cos T
-\\ 
+\frac{-\vec{S}^\intercal \vec{T}+\vec{T}^\intercal \vec{T}}{c\times d} =\cos T \label{eqb}
+\end{align}
+\item As,we have the coordinates of $\vec{S}$ and $\vec{T}$ as:
+\begin{align}
+    \vec{S}=\myvec{a+b\cos M\\b\sin M}
+    \\
+    \vec{T}=\myvec{d\cos M\\d\sin M}
+\end{align}
+\item On, computing $\vec{S}^\intercal \vec{T}$ ,we get:
+\begin{align}
+\vec{S}^\intercal \vec{T}= ad \cos M + bd \label{eqA}
+\end{align}
+\item On, computing $\vec{T}^\intercal \vec{T}$ ,we get:
+\begin{align}
+    \vec{T}^\intercal \vec{T}= d^2\cos^2 M+d^2\sin^2 M=d^2 
+    \label{eqB}
+\end{align}
+\item Putting values of \eqref{eqA} and \eqref{eqB} in \eqref{eqb}, we get:
+\begin{align}
 \frac{d^2-b\times d-a\cos M}{c\times d} =\cos T
 \end{align}
 \item Putting value of c from \eqref{eq11},we get:
@@ -300,7 +317,7 @@ d=\frac{a}{2}\times\frac{\sin I}{\sin T}+ b+a \cos M    \label{eqa}
 &\implies d=\frac{a}{2}\times\frac{\sin I}{\sin T}+ b+a \cos M 
 \end{align}
 \begin{align}
-&\implies d=\frac{3.5}{2}\times\frac{\sin 105}{\sin 60}+ 6.5+3.5 \cos75
+&\implies d=\frac{3.5}{2}\times\frac{\sin 105 \degree}{\sin 60 \degree}+ 6.5+3.5 \cos75 \degree
 \\
 &\implies d=9.35
 \end{align}
@@ -321,7 +338,7 @@ d=\frac{a}{2}\times\frac{\sin I}{\sin T}+ b+a \cos M    \label{eqa}
 \numberwithin{figure}{section}
 \begin{figure}[!ht]
 \centering
-\includegraphics[ width=\columnwidth, height=05 cm]{MIST.png}
+\includegraphics[ width=\columnwidth, height=08 cm]{MIST.png}
 \caption{Quadrilateral MIST}
 \label{fig:Quadrilateral MIST}	
 \end{figure}
